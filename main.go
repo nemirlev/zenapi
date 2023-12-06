@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"os"
 )
 
 type Client struct {
@@ -15,10 +14,9 @@ type Client struct {
 	HTTPClient *http.Client
 }
 
-func NewClient() (*Client, error) {
-	token := os.Getenv("ZENMONEY_TOKEN")
+func NewClient(token string) (*Client, error) {
 	if token == "" {
-		return nil, fmt.Errorf("ZENMONEY_TOKEN environment variable is not set")
+		return nil, fmt.Errorf("Token is not provided")
 	}
 
 	return &Client{
