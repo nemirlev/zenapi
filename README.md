@@ -2,7 +2,9 @@
 
 [![GoDoc](https://godoc.org/github.com/zenapi/zenapi?status.svg)](https://godoc.org/github.com/nemirlev/zenapi)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nemirlev/zenapi)](https://goreportcard.com/report/github.com/nemirlev/zenapi)
-[![License](https://img.shields.io/github/license/zenapi/zenmoneyapi.svg)](https://github.com/nemirlev/zenapi/blob/main/LICENSE)
+![GitHub License](https://img.shields.io/github/license/nemirlev/zenapi)
+![GitHub go.mod Go version (subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/nemirlev/zenapi)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/nemirlev/zenapi)
 
 Это SDK предназначено для взаимодействия с ZenMoney API. На данный момент поддерживает только метод diff, так как
 suggestion работает достаточно странно и не понятно на сколько он нужен.
