@@ -142,6 +142,10 @@ type Transaction struct {
 	OpOutcomeInstrument *int32   `json:"opOutcomeInstrument"` // Instrument.id. Валюта операции
 	Latitude            *float64 `json:"latitude"`            // >= -90  && <= 90
 	Longitude           *float64 `json:"longitude"`           // >= -180 && <= 180
+	QRCode              *string  `json:"qrCode"`
+	Source              *string  `json:"source"`
+	IncomeBankID        *string  `json:"incomeBankID"`
+	OutcomeBankID       *string  `json:"outcomeBankID"`
 }
 
 // Budget - бюджет пользователя
