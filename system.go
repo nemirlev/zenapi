@@ -28,9 +28,9 @@ type Company struct {
 type User struct {
 	ID       int     `json:"id"`
 	Changed  int     `json:"changed"` // Unix timestamp
-	Login    *string `json:"login,omitempty"`
-	Currency int     `json:"currency"`         // Instrument.id. Основная валюта пользователя. В ней система считает балансы и показывает пользователю отчеты
-	Parent   *int32  `json:"parent,omitempty"` // User.id. Родительский пользователь семейного учета. Он является администратором и может удалять дочерних пользователей. Для родительского пользователя parent == null
+	Login    *string `json:"login"`
+	Currency int     `json:"currency"` // Instrument.id. Основная валюта пользователя. В ней система считает балансы и показывает пользователю отчеты
+	Parent   *int32  `json:"parent"`   // User.id. Родительский пользователь семейного учета. Он является администратором и может удалять дочерних пользователей. Для родительского пользователя parent == null
 }
 
 // Country - страны
