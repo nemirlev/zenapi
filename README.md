@@ -2,7 +2,9 @@
 
 [![GoDoc](https://godoc.org/github.com/zenapi/zenapi?status.svg)](https://godoc.org/github.com/nemirlev/zenapi)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nemirlev/zenapi)](https://goreportcard.com/report/github.com/nemirlev/zenapi)
-[![License](https://img.shields.io/github/license/zenapi/zenmoneyapi.svg)](https://github.com/nemirlev/zenapi/blob/main/LICENSE)
+![GitHub License](https://img.shields.io/github/license/nemirlev/zenapi)
+![GitHub go.mod Go version (subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/nemirlev/zenapi)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/nemirlev/zenapi)
 
 Это SDK предназначено для взаимодействия с ZenMoney API. На данный момент поддерживает только метод diff, так как
 suggestion работает достаточно странно и не понятно на сколько он нужен.
@@ -17,18 +19,16 @@ go get github.com/nemirlev/zenapi
 
 ## Использование
 
-Получите токен через [Zerro.app](https://zerro.app/token). Передайте через переменные окружения `ZENMONEY_TOKEN`
-
 Для использования этого SDK вам нужно импортировать его в ваш проект:
 
 ```go
 import "github.com/nemirlev/zenapi"
 ```
 
-Затем вы можете создать новый клиент и использовать его для вызова методов API:
-
+Получите токен через [Zerro.app](https://zerro.app/token). Полученый токен передается в качестве аргумента NewClient(), тем самым вы создаете нового клиента:
 ```go
-client, err := zenapi.NewClient()
+token := "your_zenmoney_token_here"
+client, err := zenapi.NewClient(token)
 if err != nil {
 // обработка ошибки
 }
