@@ -41,7 +41,7 @@ type Tag struct {
 	Parent        *string `json:"parent"`        // Tag.id. Родительская категория. Допускается степень вложенности не больше 1, т.е. у категории может быть родительская категория, а у родительской категории уже не может быть своего родителя.
 	Icon          *string `json:"icon"`          // Id иконки категории
 	Picture       *string `json:"picture"`       // Ссылка на картинку для данной категории
-	Color         *int32  `json:"color"`         // цвет иконки категории в в виде числа. Рассчитывается по alpha, red, green, blue 0 <= 255. unsigned long color = (a << 24) + (r << 16) + (g << 8) + (b << 0).
+	Color         *int64  `json:"color"`         // цвет иконки категории в в виде числа. Рассчитывается по alpha, red, green, blue 0 <= 255. unsigned long color = (a << 24) + (r << 16) + (g << 8) + (b << 0).
 	ShowIncome    bool    `json:"showIncome"`    // Является ли категория доходной
 	ShowOutcome   bool    `json:"showOutcome"`   // Является ли категория расходной
 	BudgetIncome  bool    `json:"budgetIncome"`  // Включена ли категория в расчёт дохода в бюджете
