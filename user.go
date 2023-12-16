@@ -127,14 +127,18 @@ type Transaction struct {
 	OriginalPayee       string   `json:"originalPayee"`
 	Comment             string   `json:"comment"`
 	Date                string   `json:"date"` // 'yyyy-MM-dd'
-	Mcc                 *int32   `json:"mcc,omitempty"`
-	ReminderMarker      *string  `json:"reminderMarker,omitempty"`      // ReminderMarker.id
-	OpIncome            *float64 `json:"opIncome,omitempty"`            // >= 0
-	OpIncomeInstrument  *int32   `json:"opIncomeInstrument,omitempty"`  // Instrument.id. Валюта операции. Допустим была операция снятия долларов с рублевого счёта. Тогда в outcome будет сумма в рублях. А действительную сумму в долларах нужно записать в opOutcome. Данное поле следует использовать только, когда валюта операции отличается от валюты счета.
-	OpOutcome           *float64 `json:"opOutcome,omitempty"`           // >= 0
-	OpOutcomeInstrument *int32   `json:"opOutcomeInstrument,omitempty"` // Instrument.id. Валюта операции
-	Latitude            *float64 `json:"latitude,omitempty"`            // >= -90  && <= 90
-	Longitude           *float64 `json:"longitude,omitempty"`           // >= -180 && <= 180
+	Mcc                 *int32   `json:"mcc"`
+	ReminderMarker      *string  `json:"reminderMarker"`      // ReminderMarker.id
+	OpIncome            *float64 `json:"opIncome"`            // >= 0
+	OpIncomeInstrument  *int32   `json:"opIncomeInstrument"`  // Instrument.id. Валюта операции. Допустим была операция снятия долларов с рублевого счёта. Тогда в outcome будет сумма в рублях. А действительную сумму в долларах нужно записать в opOutcome. Данное поле следует использовать только, когда валюта операции отличается от валюты счета.
+	OpOutcome           *float64 `json:"opOutcome"`           // >= 0
+	OpOutcomeInstrument *int32   `json:"opOutcomeInstrument"` // Instrument.id. Валюта операции
+	Latitude            *float64 `json:"latitude"`            // >= -90  && <= 90
+	Longitude           *float64 `json:"longitude"`           // >= -180 && <= 180
+	QRCode              *string  `json:"qrCode"`
+	Source              *string  `json:"source"`
+	IncomeBankID        *string  `json:"incomeBankID"`
+	OutcomeBankID       *string  `json:"outcomeBankID"`
 }
 
 // Budget - бюджет пользователя
