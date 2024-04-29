@@ -22,4 +22,4 @@ jobs:
         with:
           args: release
         env:
-          GITHUB_TOKEN: ${{secrets.PERSONAL_ACCESS_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.PERSONAL_GITHUB}}
