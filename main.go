@@ -16,7 +16,7 @@ type Client struct {
 
 func NewClient(token string) (*Client, error) {
 	if token == "" {
-		return nil, fmt.Errorf("Token is not provided")
+		return nil, fmt.Errorf("token is not provided")
 	}
 
 	return &Client{
