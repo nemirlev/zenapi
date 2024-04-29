@@ -80,10 +80,20 @@ func (c *Client) Sync(body Request) (Response, error) {
 }
 
 // FullSync отправляет запрос на получение всех данных из ZenMoney
-func (c *Client) FullSync() (Response, error) { // Change return type to Response
+func (c *Client) FullSync() (Response, error) {
 	body := Request{
 		CurrentClientTimestamp: int(time.Now().Unix()),
 		ServerTimestamp:        0,
+	}
+
+	return c.Sync(body)
+}
+
+// SyncSince отправляет запрос на получение изменений из ZenMoney c момента последней синхронизации
+func (c *Client) SyncSince(lastSync time.Time) (Response, error) {
+	body := Request{
+		CurrentClientTimestamp: int(time.Now().Unix()),
+		ServerTimestamp:        int(lastSync.Unix()),
 	}
 
 	return c.Sync(body)
