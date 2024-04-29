@@ -5,6 +5,7 @@
 ![GitHub License](https://img.shields.io/github/license/nemirlev/zenapi)
 ![GitHub go.mod Go version (subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/nemirlev/zenapi)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/nemirlev/zenapi)
+[![codecov](https://codecov.io/gh/nemirlev/zenapi/graph/badge.svg?token=J2S3N967Q7)](https://codecov.io/gh/nemirlev/zenapi)
 
 Это SDK предназначено для взаимодействия с ZenMoney API. На данный момент поддерживает только метод diff, так как
 suggestion работает достаточно странно и не понятно на сколько он нужен.
