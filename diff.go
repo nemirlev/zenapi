@@ -43,6 +43,7 @@ type Response struct {
 	Reminder        []Reminder         `json:"reminder,omitempty"`
 	ReminderMarker  []ReminderMarker   `json:"reminderMarker,omitempty"`
 	Transaction     []Transaction      `json:"transaction,omitempty"`
+	Deletion        []Deletion         `json:"deletion,omitempty"`
 }
 
 type Request struct {
