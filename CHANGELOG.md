@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Added comments to data structures in system.go
 - Added comments to data structures in user.go
 
+### ⚙️ Miscellaneous Tasks
+
+- Update config goreleaser
+
 ## [1.3.2] - 2024-05-11
 
 ### 🚀 Features
