@@ -1,0 +1,210 @@
+{
+  "serverTimestamp": 1728418637,
+  "instrument": [
+    {
+      "id": 1,
+      "title": "Доллар США",
+      "shortTitle": "USD",
+      "symbol": "$",
+      "rate": 96.0649,
+      "changed": 1728348303
+    }
+  ],
+  "country": [
+    {
+      "id": 1,
+      "title": "Россия",
+      "currency": 2,
+      "domain": "ru"
+    }
+  ],
+  "company": [
+    {
+      "id": 3,
+      "title": "Альфа-Банк",
+      "www": "alfabank.ru",
+      "country": 1,
+      "fullTitle": null,
+      "changed": 1371739202,
+      "deleted": false,
+      "countryCode": "RU"
+    }
+  ],
+  "user": [
+    {
+      "id": 784712,
+      "country": 1,
+      "login": "levnemir",
+      "parent": null,
+      "countryCode": "RU",
+      "email": "levnemir@yandex.ru",
+      "changed": 1703967022,
+      "currency": 2,
+      "paidTill": 4797848907,
+      "monthStartDay": 1,
+      "isForecastEnabled": true,
+      "planBalanceMode": "balance",
+      "planSettings": "[]",
+      "subscription": "10YearsSubscription",
+      "subscriptionRenewalDate": null
+    }
+  ],
+  "account": [
+    {
+      "id": "51fdec06-5993-4060-a70f-5a4719825ff7",
+      "user": 784712,
+      "instrument": 2,
+      "type": "ccard",
+      "role": null,
+      "private": false,
+      "savings": false,
+      "title": "Tinkoff Лю",
+      "inBalance": true,
+      "creditLimit": 0,
+      "startBalance": 0,
+      "balance": 0,
+      "company": 4902,
+      "archive": false,
+      "enableCorrection": true,
+      "balanceCorrectionType": "request",
+      "startDate": null,
+      "capitalization": null,
+      "percent": null,
+      "changed": 1728403929,
+      "syncID": [
+        "9978",
+        "1296"
+      ],
+      "enableSMS": true,
+      "endDateOffset": null,
+      "endDateOffsetInterval": null,
+      "payoffStep": null,
+      "payoffInterval": null
+    }
+  ],
+  "tag": [
+    {
+      "id": "3d52459b-3a08-4bda-8a10-f26c6699599a",
+      "user": 784712,
+      "changed": 1569071943,
+      "icon": "5003_portrait_mode",
+      "budgetIncome": false,
+      "budgetOutcome": true,
+      "required": false,
+      "color": null,
+      "picture": null,
+      "title": "Забота о себе",
+      "showIncome": false,
+      "showOutcome": true,
+      "parent": null,
+      "staticId": "69"
+    }
+  ],
+  "budget": [
+    {
+      "user": 784712,
+      "changed": 1727015084,
+      "date": "2024-10-01",
+      "tag": "fa2dd7d5-61db-4532-98c3-3d0c16a3b6b5",
+      "income": 464000,
+      "outcome": 0,
+      "incomeLock": false,
+      "outcomeLock": false,
+      "isIncomeForecast": true,
+      "isOutcomeForecast": true
+    }
+  ],
+  "merchant": [
+    {
+      "id": "37f3740f-8e96-4b62-86ad-9b139af4cb7f",
+      "user": 784712,
+      "title": "Игрушки",
+      "changed": 1706035685
+    }
+  ],
+  "reminder": [
+    {
+      "id": "5de1bb6a-9e97-41ad-a18f-a994ea9e1381",
+      "user": 784712,
+      "income": 82000,
+      "outcome": 0,
+      "changed": 1634054194,
+      "incomeInstrument": 2,
+      "outcomeInstrument": 2,
+      "step": 0,
+      "points": [
+        0
+      ],
+      "tag": [
+        "55f1ba25-abd8-400b-a101-61784700c275"
+      ],
+      "startDate": "2021-12-30",
+      "endDate": null,
+      "notify": false,
+      "interval": null,
+      "incomeAccount": "9b9fb2d9-11c1-4c62-994b-157246a8b4e3",
+      "outcomeAccount": "9b9fb2d9-11c1-4c62-994b-157246a8b4e3",
+      "comment": "Зарплата ВШЭ",
+      "payee": null,
+      "merchant": null
+    }
+  ],
+  "reminderMarker": [
+    {
+      "id": "6630a452-2f87-4bee-b07e-ab4f97b4f0ff",
+      "user": 784712,
+      "date": "2024-07-05",
+      "income": 16443,
+      "outcome": 0,
+      "changed": 1724236649,
+      "incomeInstrument": 2,
+      "outcomeInstrument": 2,
+      "state": "deleted",
+      "isForecast": false,
+      "reminder": "116c0f01-9115-4c96-88b6-9a03f4061466",
+      "incomeAccount": "bab6e3b3-2439-4787-82e6-bea981fdcc71",
+      "outcomeAccount": "bab6e3b3-2439-4787-82e6-bea981fdcc71",
+      "comment": "ММУ",
+      "payee": null,
+      "merchant": null,
+      "notify": false,
+      "tag": [
+        "55f1ba25-abd8-400b-a101-61784700c275"
+      ]
+    }
+  ],
+  "transaction": [
+    {
+      "id": "b0a835e4-e657-4a00-a99a-a7936b302e0a",
+      "user": 784712,
+      "date": "2020-07-16",
+      "income": 375,
+      "outcome": 375,
+      "changed": 1702577959,
+      "incomeInstrument": 2,
+      "outcomeInstrument": 2,
+      "created": 1594904732,
+      "originalPayee": "Максим Святославович С.",
+      "deleted": true,
+      "viewed": false,
+      "hold": false,
+      "qrCode": null,
+      "source": "plugin",
+      "incomeAccount": "db63b8fd-e0ca-40cc-8fc1-cc6fb1125f17",
+      "outcomeAccount": null,
+      "tag": null,
+      "comment": null,
+      "payee": "Максим Святославович С.",
+      "opIncome": 0,
+      "opOutcome": 0,
+      "opIncomeInstrument": null,
+      "opOutcomeInstrument": null,
+      "latitude": null,
+      "longitude": null,
+      "merchant": "47912c0d-6d4f-45e6-85ff-9fa4b4aded05",
+      "incomeBankID": null,
+      "outcomeBankID": null,
+      "reminderMarker": null
+    }
+  ]
+}
