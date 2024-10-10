@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### 🚀 Features
+
+- Added comments to data structures in system.go
+- Added comments to data structures in user.go
+
 ## [1.3.2] - 2024-05-11
 
 ### 🚀 Features
