@@ -2,12 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
-
-### ⚙️ Miscellaneous Tasks
-
-- Update go releaser
-
 ## [1.3.3] - 2024-10-10
 
 ### 🚀 Features
@@ -18,6 +12,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Update config goreleaser
+- Update go releaser
 
 ## [1.3.2] - 2024-05-11
 
