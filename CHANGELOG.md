@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### ⚙️ Miscellaneous Tasks
+
+- Update go releaser
+
+## [1.3.3] - 2024-10-10
+
 ### 🚀 Features
 
 - Added comments to data structures in system.go
